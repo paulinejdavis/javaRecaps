@@ -11,11 +11,11 @@ public class StreamIntermediaOperations {
         List<String> names = Arrays.asList("Walnut", "Brazil Nut", "Snowflake", "MongoDB");
 
         //filter: filters the stream based on the predicate
-        Stream<String> namesStartingWithA = names.stream().filter(name -> name.startsWith("8"))
+        Stream<String> namesStartingWithA = names.stream().filter(name -> name.startsWith("8"));
         //map:
         Stream<Integer> namesLengths = names.stream().map(String::length);
         //flatMap:
-        List<List<String>> nestedNames = Arrays.asList(Arrays.asList("Walnut", "Brazil Nut"),Arrays.asList ("Snowflake", "MongoDB");
+        List<List<String>> nestedNames = Arrays.asList(Arrays.asList("Walnut", "Brazil Nut"),Arrays.asList ("Snowflake", "MongoDB"));
         Stream<String> flatNames = nestedNames.stream().flatMap(Collection::stream);
         //peek: great for debugging
         Stream<String> namesWithPeek = names.stream().peek(System.out::println);
@@ -26,6 +26,6 @@ public class StreamIntermediaOperations {
         //distinct
         Stream<String> distinctNames = names.stream().distinct();
         //sorted
-        Stream<String> sortedNames = names.stream().sorted(Comparator.naturalOrder())
+        Stream<String> sortedNames = names.stream().sorted(Comparator.naturalOrder());
     }
 }
