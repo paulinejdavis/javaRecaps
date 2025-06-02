@@ -11,7 +11,7 @@ public class ScheduledUpdates {
 
         //runnable task to send updates
         Runnable updateTask = () -> {
-            System.out.println("Sending election updates! Timestamp: " + System.currentTimeMillis() / 1000)
+            System.out.println("Sending election updates! Timestamp: " + System.currentTimeMillis() / 1000);
         };
 
 
@@ -24,7 +24,5 @@ public class ScheduledUpdates {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
-    }
 }
