@@ -2,7 +2,7 @@ package collectionsgenerics;
 
 public class Box<T> {
 
-    private T content
+    private T content;
 
     public T getContent() {
         return content;
