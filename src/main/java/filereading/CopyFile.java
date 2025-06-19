@@ -15,7 +15,7 @@ public class CopyFile {
                 writer.write(character);
             }
         } catch (IOException e){
-            System.out.println("Erors my friend..: " + e.getMessage());
+            System.out.println("Errors my friend..: " + e.getMessage());
 
         }
 

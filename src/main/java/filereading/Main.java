@@ -4,8 +4,8 @@ import java.io.FileNotFoundException;
 
 public class Main {
     public static void main(String[] args) {
-        String sourcePath = "source.txt";
-        String destinationPath = "destination.txt";
+        String sourcePath = "src/main/resources/source.txt";
+        String destinationPath = "src/main/resources/destination.txt";
 
         try {
             CopyFile.copyFile(sourcePath, destinationPath);
